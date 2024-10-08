@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <title>Gestion des Chantiers</title>
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: #f7f2f2; /* Couleur de fond */
+            color: #333; /* Couleur de texte */
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            overflow-x: hidden; /* Empêche le défilement horizontal */
+        }
+
+        #root {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Utilisation de min-height pour permettre le défilement */
+            overflow-y: auto; /* Permet le défilement vertical */
+            align-items: center; /* Centrer les éléments horizontalement */
+        }
+
+        nav {
+            background-color: hsl(212, 70%, 18%); /* Couleur principale */
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%; /* Prendre toute la largeur */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajouter une ombre */
+        }
+
+        nav h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            flex: 1; /* Permet au titre de prendre de l'espace */
+            text-align: center; /* Centrer le titre */
+        }
+
+        nav button {
+            background-color: #096694; /* Couleur d'accent */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            min-width: 120px; /* Largeur minimale pour le bouton */
+            margin-left: 1rem; /* Espacement entre le titre et le bouton */
+        }
+
+        nav button:hover {
+            background-color: #04bbd7; /* Couleur d'accent au survol */
+        }
+
+        .container {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Prendre toute la largeur */
+            max-width: 600px; /* Largeur maximale pour le conteneur */
+        }
+
+        h2 {
+            color: #0a3d77; /* Couleur des titres */
+            margin-bottom: 1rem; /* Espacement en bas du titre */
+            text-align: center; /* Centrer le texte */
+        }
+
+        .input-field {
+            padding: 0.75rem; /* Augmenter le rembourrage pour une meilleure expérience tactile */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            width: 100%;
+            max-width: 400px;
+            font-size: 1rem; /* Taille de police adaptable */
+        }
+
+        .submit-button {
+            background-color: #4a90e2; /* Couleur principale */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 0.75rem 1.5rem; /* Augmenter le rembourrage pour une meilleure expérience tactile */
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1rem; /* Taille de police adaptable */
+            width: 100%;
+            max-width: 200px; /* Largeur maximale pour le bouton */
+        }
+
+        .submit-button:hover {
+            background-color: #007bb8; /* Couleur au survol */
+        }
+
+        @media (max-width: 600px) {
+            nav h1 {
+                font-size: 1.5rem; /* Taille de police adaptable sur petits écrans */
+            }
+
+            nav button {
+                padding: 0.5rem 1rem; /* Ajuster le rembourrage sur petits écrans */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <noscript>
+        Vous devez activer JavaScript pour exécuter cette application.
+    </noscript>
+    <div id="root">
+        <nav>
+            <h1>Gestion des Chantiers</h1>
+            <button>Ajouter un Projet</button>
+        </nav>
+        <div class="container">
+            <h2>Chargement des chantiers </h2>
+
+        </div>
+    </div>
+</body>
+</html>
+
