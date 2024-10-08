@@ -1,16 +1,13 @@
-// react-load-script.d.ts
+// src/react-load-script.d.ts
 declare module "react-load-script" {
-  import { Component } from "react";
+  import * as React from "react";
 
   interface ScriptProps {
     url: string;
-    onCreate?: () => void;
-    onError?: (event: any) => void;
     onLoad?: () => void;
-    attributes?: { [key: string]: string };
+    onError?: () => void;
+    [key: string]: any;
   }
 
-  class Script extends Component<ScriptProps> {}
-
-  export default Script;
+  export default class Script extends React.Component<ScriptProps> {}
 }
