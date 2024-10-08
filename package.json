@@ -21,10 +21,11 @@
     "react-konva": "18.2.10",
     "react-load-script": "0.0.6",
     "react-places-autocomplete": "7.3.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "use-image": "1.1.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/react": "18.2.38",
     "@types/react-dom": "18.2.15",
     "typescript": "4.4.4"
